@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ingreso de Dias y Horas no trabajadas</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/estilo_no_days_no_hours.css">
+		<script src="js/jquery-2.2.3.js"></script>
+		<script src="js/UIRestriccionHorario.js"></script>
+		<script src="js/funcionesUIRestriccionHorarios.js"></script>
+		<script type="text/javascript">
+			var ui_restriccion1 = null;
+			var ui_restriccion2 = null;
+
+			window.addEventListener('load', function(evt){
+				ui_restriccion1 = new UIRestriccionHorario("contenedor1");
+				ui_restriccion2 = new UIRestriccionHorario("contenedor2");
+
+			});
+		</script>
+	</head>
+	<body>
+		<div id="contenedor1" class="conteiner"></div>
+		<div id="contenedor2" class="conteiner"></div>
+	</body>
+</html>
